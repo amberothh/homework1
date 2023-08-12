@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: rgb(143, 201, 217);
+    padding: 20px;
+}
+
+h1{
+    margin-bottom: 2rem;
+}
+
+input , button {
+    outline: none;
+    border: none;
+    font-family: inherit;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: rgb(243, 238, 236);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 1rem;
+    &:hover{
+        background-color: rgb(189, 178, 174);
+        
+
+    }
+
+}
+
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.task-item{
+    max-width: 260px;
+    height: 25px;
+    margin: 5px 0;
+    background-color:rgb(243, 247, 247);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgb(72, 75, 74);
+    cursor: pointer;
+    padding-left: 10px;
+    padding-top: 3px;
+    animation: animateIn 0.3s ease;
+}
+
+
+@keyframes animateIn{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+.completed{
+    /*text-decoration: line-trough;*/
+    background-color: rgb(52, 177, 67);
+}
+
+
+
